@@ -24,7 +24,6 @@ router.post("/login", async(req, res) => {
     return res.redirect("/auth/login?type=error&message=" + "Incorrect Login Info");
 });
 
-
 router.get("/logout", async(req, res) => {
     return res.clearCookie('auth').redirect('/');
 });

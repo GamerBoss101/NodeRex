@@ -59,7 +59,7 @@ console.log(Table.toString());
 require("./socket.ts")(io, events)
 
 // READY
-mongoose.connect(process.env.Mongo).then(() => { console.log("Connected to DataBase") });
+// mongoose.connect(process.env.Mongo).then(() => { console.log("Connected to DataBase") });
 http.listen(process.env.Port, () => { console.log( `Server is running on localhost:${process.env.Port} !`) });
 
 // EXPORTS
